@@ -30,7 +30,7 @@ gulp.task('cleanDist', function() {
 gulp.task('processHtml', function() {
   return gulp.src(htmlBlob)
     .pipe(gulpHtmllint({
-      config: './.linthtmlrc.json',
+      config: './.htmllintrc',
     }, function(filepath, issues) {
       issues.forEach(function(issue) {
         const { line, column, code, msg } = issue;
