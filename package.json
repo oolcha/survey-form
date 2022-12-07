@@ -8,7 +8,7 @@
     "build": "gulp build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "lint": "stylelint src/**/*.scss && eslint src/**/*.js && htmllint --rc ./htmllintrc src/*.html"
+    "lint": "stylelint src/**/*.scss && eslint src/**/*.js && htmllint --rc ./.htmllintrc src/*.html"
   },
   "devDependencies": {
     "@linthtml/linthtml": "^0.8.3",
